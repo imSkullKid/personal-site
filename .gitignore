@@ -1,33 +1,90 @@
-HELP.md
+# Ignore Maven/Gradle build files
 target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+out/
+*.class
+*.war
+*.ear
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
+# Ignore Spring Boot specific files
+spring-boot-app.log
 
-### IntelliJ IDEA ###
-.idea
+# Ignore IntelliJ IDEA files
+*.iml
+.idea/
+*.ipr
 *.iws
+
+# Ignore Eclipse files
+.project
+.classpath
+.settings/
+
+# Ignore macOS system files
+.DS_Store
+
+# Ignore Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ignore node_modules directory for React
+src/main/resources/frontend/my-app/node_modules/
+
+# Ignore build directory for React
+src/main/resources/frontend/my-app/build/
+
+# Ignore npm log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore local environment configuration files
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Ignore coverage reports
+coverage/
+
+# Ignore logs
+logs/
+*.log
+*.log.*
+
+# Ignore temporary files
+tmp/
+temp/
+*.tmp
+
+# Ignore other config files
+.vscode/
+*.swp
+*.swo
+*.swn
+*.bak
+*.orig
+
+# Ignore lock files
+package-lock.json
+yarn.lock
+
+# Ignore compiled files
+dist/
+build/
+
+# Ignore IDE specific files
+.vscode/
+.idea/
+
+# Ignore JetBrains IDE specific files
 *.iml
 *.ipr
+*.iws
+.idea/
 
-### NetBeans ###
-/nbproject/private/
-/nbbuild/
-/dist/
-/nbdist/
-/.nb-gradle/
-build/
-!**/src/main/**/build/
-!**/src/test/**/build/
+# Ignore React testing snapshots
+__snapshots__/
 
-### VS Code ###
-.vscode/
+# Ignore Spring Boot development specific files
+hs_err_pid*
